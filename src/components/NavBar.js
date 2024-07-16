@@ -1,7 +1,33 @@
+// import { NavLink} from "react-router-dom";
+// import "./NavBar.css";
+
+// function NavBar() {
+
+//   return (
+//     <nav>
+//       <NavLink
+//         to="/"
+//         className="nav-link" 
+//       >
+//         Home
+//       </NavLink>
+//       <NavLink
+//         to="/about"
+//         className="nav-link"
+//       >
+//         About
+//       </NavLink>
+//     </nav>
+//   );
+// }
+
+// export default NavBar;
+//oooooooo
+
 import { NavLink} from "react-router-dom";
 import "./NavBar.css";
 
-function NavBar() {
+function NavBar({logout}) {
 
   return (
     <nav>
@@ -17,6 +43,7 @@ function NavBar() {
       >
         About
       </NavLink>
+      <button onClick={logout}>logout</button>
     </nav>
   );
 }
